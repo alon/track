@@ -1,0 +1,6 @@
+*.o
+track
+drawstuff
+libdrawstuff.a
+tags
+textures

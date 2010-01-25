@@ -1,0 +1,28 @@
+A very old project using ODE to simulate a tracked vehicle mockup. The vehicle consists of:
+ Large box - the interior
+ Four Wheels with Teeth (I know there is a technical term for this), two on either side.
+ Two Chains of Links that are setup around the wheels
+
+param.dat controls many of the components.
+
+Requirements:
+ ODE 0.11 from sourceforge.
+
+Build instructions:
+ build and install it (./configure && make && sudo make install)
+ Assuming ODE is the location of the source, create some symlinks:
+  ln -sf $ODE/include/drawstuff .
+  ln -sf $ODE/drawstuff/src/.libs/libdrawstuff.a .
+  ln -sf $ODE/drawstuff/textures .
+ make
+
+Usage:
+ # edit param.dat
+ ./track
+ The keyboard shortcuts are standard drawstuff stuff (and are printed to stdout).
+
+TODO:
+ * build a debian package, just for kicks
+ * make it into a screensaver (the ultimate test)
+ * blenderize it - make a blender python script to build this thing.
+

@@ -1,0 +1,6 @@
+Step		0.001
+Gravity		0	0.0	-50.0
+NumLinks	2
+InitZ		1.0
+# Link size
+BoxSides	1.0	1.0	1.0

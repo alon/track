@@ -1,0 +1,32 @@
+typedef enum {
+	keyWriteFrame = '`',
+	keyCreateMainBody = 'h',
+	keyInputMode = 'i',
+
+	keyBreakWheel = 'j',
+	keyZeroSpeed = ' ',
+	keyRightSpeedIncrease = '1',
+	keyRightSpeedDecrease = 'q',
+	keyRightSpeedMax = 'a',
+	keyRightSpeedMin = 'z',
+	keyLeftSpeedIncrease = '2',
+	keyLeftSpeedDecrease = 'w',
+	keyLeftSpeedMax = 's',
+	keyLeftSpeedMin = 'x',
+	keyBothSpeedIncrease = '3',
+	keyBothSpeedDecrease = 'e',
+	keyBothSpeedMax = 'd',
+	keyBothSpeedMin = 'c',
+
+	keyTwitchToggle = 't',
+	keyTwitchHertzHalf = 'r',
+	keyTwitchHertzDouble = 'y',
+	keyAimCamera = ';',
+	keyLockCameraToVehicle = '.',
+	keyIncreaseViewByTwoMod = '[',
+	keyIncreaseViewByOneMod = ']',
+	keyPrintSprocketMass = '+',
+	keyPrintManyVariables = '=',
+	keyEnterMovieMode = 'm',
+	keyDisplayWheels = '/'
+} KEY_MAP;

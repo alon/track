@@ -1,0 +1,48 @@
+Step		0.0005
+Gravity		0	0.0	-10.0
+# defaule 1e-10 for double, 1e-5 for single. values from 1e-9 to 1
+# enlarge if simulation is erratic
+GlobalCFM	1e-2
+# ERP = h k_p / (h k_p + k_d)
+# CFM = 1 / (h k_p + k_d)
+GroundSoftERP	0.1
+GroundSoftCFM	0.1
+#GroundSoftERP	0.00049975012493753123
+#GroundSoftCFM	0.49975012493753123438
+Mu		0.0
+# teeth must be a multiple of 4
+SprocketTeeth	8
+BodyMass	1.0
+InitZ		1.3
+# Link parts sizes
+Box0Sides	0.14	0.073	0.2
+Box1Sides	0.3	0.09	0.2
+Box2Sides	0.3	0.1	0.1
+Box3Sides	0.3	0.09	0.2
+Box4Sides	0.14	0.073	0.2
+Box5Sides	0.09	0.11	0.2
+Box6Sides	0.09	0.11	0.2
+# this is the outer part (the part that treads ground)
+Box7Sides	0.3	0.5	0.1
+# Sprocket teeth box size
+TeethXYZ	0.2	0.1	0.1
+#Spacer 		0.00005
+Spacer 		0.0025
+Radius		1
+Height		0.1
+TeethHFuzz	0.1
+# Maximal force motor supplies to sprocket
+MaxF		2000
+MaxSpeed	3
+# Twitch behavior variables
+TwitchHertz	16
+# some testing parameters
+Linear		0
+ChangeLen	0
+Start		8
+Stop		23
+TexturesPath	/home/alonl/open/ode/drawstuff/textures
+# movie parameters. make sure you don't run out of disk space! (although this is linux, and nothing
+# bad can happen - you'll just have some zero sized frames, one half sized frame, and some rm-ing to do)
+MovieEventTime	0
+MovieFinishTime 12
