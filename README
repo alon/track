@@ -9,8 +9,9 @@ Requirements:
  ODE 0.11 from sourceforge.
 
 Build instructions:
- build and install it (./configure && make && sudo make install)
- Assuming ODE is the location of the source, create some symlinks:
+ build and install it ODE at $ODE (./configure && make && sudo make install)
+  ubuntu package is missing drawstuff, which is used right now
+ Create some symlinks:
   ln -sf $ODE/include/drawstuff .
   ln -sf $ODE/drawstuff/src/.libs/libdrawstuff.a .
   ln -sf $ODE/drawstuff/textures .
@@ -22,6 +23,7 @@ Usage:
  The keyboard shortcuts are standard drawstuff stuff (and are printed to stdout).
 
 TODO:
+ * replace drawstuff with anything else
  * build a debian package, just for kicks
  * make it into a screensaver (the ultimate test)
  * blenderize it - make a blender python script to build this thing.
